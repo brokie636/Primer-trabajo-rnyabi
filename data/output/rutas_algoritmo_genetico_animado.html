@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12d6d624362ee24fe3008ece6b4b13a6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_12d6d624362ee24fe3008ece6b4b13a6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_12d6d624362ee24fe3008ece6b4b13a6 = L.map(
+                "map_12d6d624362ee24fe3008ece6b4b13a6",
+                {
+                    center: [23.6345, -102.5528],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2c20a3bde2569a25634e8f21e28e2961 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2c20a3bde2569a25634e8f21e28e2961.addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+            var marker_673b5df783d983eae83d7a3d05f20764 = L.marker(
+                [22.7716667, -102.57527777777776],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+            var icon_20adbe1b03772fe2423989ff5e919752 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_673b5df783d983eae83d7a3d05f20764.setIcon(icon_20adbe1b03772fe2423989ff5e919752);
+        
+    
+        var popup_4580ba63fb6000095373791fb1b8d0a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e2eac3ef77be1e2317bdf4a4189b03b = $(`<div id="html_4e2eac3ef77be1e2317bdf4a4189b03b" style="width: 100.0%; height: 100.0%;">Inicio</div>`)[0];
+                popup_4580ba63fb6000095373791fb1b8d0a3.setContent(html_4e2eac3ef77be1e2317bdf4a4189b03b);
+            
+        
+
+        marker_673b5df783d983eae83d7a3d05f20764.bindPopup(popup_4580ba63fb6000095373791fb1b8d0a3)
+        ;
+
+        
+    
+    
+            var marker_a68af380dc9aeb1b802df28a8f2a38ee = L.marker(
+                [22.7716667, -102.57527777777776],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+            var icon_5b3dbd6865519a1e0dc5fd02a188bb86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a68af380dc9aeb1b802df28a8f2a38ee.setIcon(icon_5b3dbd6865519a1e0dc5fd02a188bb86);
+        
+    
+        var popup_cfde04a2ae331380bf785e26d344c90d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7cfa188bf86299642e250190a4aa3a4 = $(`<div id="html_d7cfa188bf86299642e250190a4aa3a4" style="width: 100.0%; height: 100.0%;">Fin</div>`)[0];
+                popup_cfde04a2ae331380bf785e26d344c90d.setContent(html_d7cfa188bf86299642e250190a4aa3a4);
+            
+        
+
+        marker_a68af380dc9aeb1b802df28a8f2a38ee.bindPopup(popup_cfde04a2ae331380bf785e26d344c90d)
+        ;
+
+        
+    
+    
+            var marker_b010df47330b88d322f13d0c88049f95 = L.marker(
+                [18.9331321, -99.2599579],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_c4ed59c904e94f283771dab1a5209301 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffd1fca63b1386a517879dee5eecee27 = $(`<div id="html_ffd1fca63b1386a517879dee5eecee27" style="width: 100.0%; height: 100.0%;">Estado Cuernavaca</div>`)[0];
+                popup_c4ed59c904e94f283771dab1a5209301.setContent(html_ffd1fca63b1386a517879dee5eecee27);
+            
+        
+
+        marker_b010df47330b88d322f13d0c88049f95.bindPopup(popup_c4ed59c904e94f283771dab1a5209301)
+        ;
+
+        
+    
+    
+            var marker_f7ff5966af4db9d2862368b927d8b181 = L.marker(
+                [25.4230425, -100.9927509],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_2a3308f41450e1e049b7fb9fe5e567b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c9ffaee77cd08d9f1420453534aff25 = $(`<div id="html_9c9ffaee77cd08d9f1420453534aff25" style="width: 100.0%; height: 100.0%;">Estado Saltillo</div>`)[0];
+                popup_2a3308f41450e1e049b7fb9fe5e567b0.setContent(html_9c9ffaee77cd08d9f1420453534aff25);
+            
+        
+
+        marker_f7ff5966af4db9d2862368b927d8b181.bindPopup(popup_2a3308f41450e1e049b7fb9fe5e567b0)
+        ;
+
+        
+    
+    
+            var marker_19b9dd39e69bb8e78fc5566b06ad8771 = L.marker(
+                [25.6802019, -100.315258],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_748f3616d0f64186c4c3384a0f07f4e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_266f12243bc0f8f2f7086c891ecc75d4 = $(`<div id="html_266f12243bc0f8f2f7086c891ecc75d4" style="width: 100.0%; height: 100.0%;">Estado Monterrey</div>`)[0];
+                popup_748f3616d0f64186c4c3384a0f07f4e8.setContent(html_266f12243bc0f8f2f7086c891ecc75d4);
+            
+        
+
+        marker_19b9dd39e69bb8e78fc5566b06ad8771.bindPopup(popup_748f3616d0f64186c4c3384a0f07f4e8)
+        ;
+
+        
+    
+    
+            var marker_554837aca0a57aaf1a300c6d86a1d1d5 = L.marker(
+                [23.7389846, -99.1441352],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_69fbd9fcb301c01d2d1571d7aea1f361 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9559cca7a2d4d969f4e96787138c2c8 = $(`<div id="html_d9559cca7a2d4d969f4e96787138c2c8" style="width: 100.0%; height: 100.0%;">Estado Ciudad Victoria</div>`)[0];
+                popup_69fbd9fcb301c01d2d1571d7aea1f361.setContent(html_d9559cca7a2d4d969f4e96787138c2c8);
+            
+        
+
+        marker_554837aca0a57aaf1a300c6d86a1d1d5.bindPopup(popup_69fbd9fcb301c01d2d1571d7aea1f361)
+        ;
+
+        
+    
+    
+            var marker_95d5b2b0f9895b028bb214b1330bdcda = L.marker(
+                [22.5000001, -100.4949145],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_115f9989896b99a6f79cfb0f5771de58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b70f91c9d6a59fd897d3e9b22839bb8 = $(`<div id="html_6b70f91c9d6a59fd897d3e9b22839bb8" style="width: 100.0%; height: 100.0%;">Estado San Luis Potosí</div>`)[0];
+                popup_115f9989896b99a6f79cfb0f5771de58.setContent(html_6b70f91c9d6a59fd897d3e9b22839bb8);
+            
+        
+
+        marker_95d5b2b0f9895b028bb214b1330bdcda.bindPopup(popup_115f9989896b99a6f79cfb0f5771de58)
+        ;
+
+        
+    
+    
+            var marker_33e1136b81dea00e2de1ce0557527e4a = L.marker(
+                [21.880487, -102.2967195],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_da0f3b87d3973d51f9abe6fad30ebdaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b724e0664cc1bbfba4e3b0ca3d8219bb = $(`<div id="html_b724e0664cc1bbfba4e3b0ca3d8219bb" style="width: 100.0%; height: 100.0%;">Estado Aguascalientes</div>`)[0];
+                popup_da0f3b87d3973d51f9abe6fad30ebdaa.setContent(html_b724e0664cc1bbfba4e3b0ca3d8219bb);
+            
+        
+
+        marker_33e1136b81dea00e2de1ce0557527e4a.bindPopup(popup_da0f3b87d3973d51f9abe6fad30ebdaa)
+        ;
+
+        
+    
+    
+            var marker_720c05c0bc767f91ded1cec72fb181b9 = L.marker(
+                [20.6720375, -103.338396],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_7ae177e6edc0e53370ab2130c94f32e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_080264363637a515d779db44d16347af = $(`<div id="html_080264363637a515d779db44d16347af" style="width: 100.0%; height: 100.0%;">Estado Guadalajara</div>`)[0];
+                popup_7ae177e6edc0e53370ab2130c94f32e2.setContent(html_080264363637a515d779db44d16347af);
+            
+        
+
+        marker_720c05c0bc767f91ded1cec72fb181b9.bindPopup(popup_7ae177e6edc0e53370ab2130c94f32e2)
+        ;
+
+        
+    
+    
+            var marker_f062826264d015d30da1cb408b553ac3 = L.marker(
+                [24.7978965, -107.393395],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_d863d139d6e631c0756a4a02fc98e276 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2299880bcbbaee71e8e758d3c4c57ddc = $(`<div id="html_2299880bcbbaee71e8e758d3c4c57ddc" style="width: 100.0%; height: 100.0%;">Estado Culiacán Rosales</div>`)[0];
+                popup_d863d139d6e631c0756a4a02fc98e276.setContent(html_2299880bcbbaee71e8e758d3c4c57ddc);
+            
+        
+
+        marker_f062826264d015d30da1cb408b553ac3.bindPopup(popup_d863d139d6e631c0756a4a02fc98e276)
+        ;
+
+        
+    
+    
+            var marker_c5bf173483f1e51209b7971cee110bd7 = L.marker(
+                [29.0948207, -110.9692202],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_a49738991498c7c86fc5e98bf9a89ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d18ad14879313ef3effc8615210d493 = $(`<div id="html_2d18ad14879313ef3effc8615210d493" style="width: 100.0%; height: 100.0%;">Estado Hermosillo</div>`)[0];
+                popup_a49738991498c7c86fc5e98bf9a89ea6.setContent(html_2d18ad14879313ef3effc8615210d493);
+            
+        
+
+        marker_c5bf173483f1e51209b7971cee110bd7.bindPopup(popup_a49738991498c7c86fc5e98bf9a89ea6)
+        ;
+
+        
+    
+    
+            var marker_622f83e3398988475740342f3b65e641 = L.marker(
+                [21.5119156, -104.8915889],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_544a5ed5f89b7a0635cd397dfb452fe8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0eb8a329391723038dabe155ec1b0207 = $(`<div id="html_0eb8a329391723038dabe155ec1b0207" style="width: 100.0%; height: 100.0%;">Estado Tepic</div>`)[0];
+                popup_544a5ed5f89b7a0635cd397dfb452fe8.setContent(html_0eb8a329391723038dabe155ec1b0207);
+            
+        
+
+        marker_622f83e3398988475740342f3b65e641.bindPopup(popup_544a5ed5f89b7a0635cd397dfb452fe8)
+        ;
+
+        
+    
+    
+            var marker_8dcd56bfa4bb2d2be95a662120363467 = L.marker(
+                [19.2430556, -103.72805555555556],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_7a16c7e6c5d12bea9a4dfc5706d80411 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2628aa316d1b8df6f70b05d5cf292309 = $(`<div id="html_2628aa316d1b8df6f70b05d5cf292309" style="width: 100.0%; height: 100.0%;">Estado Colima</div>`)[0];
+                popup_7a16c7e6c5d12bea9a4dfc5706d80411.setContent(html_2628aa316d1b8df6f70b05d5cf292309);
+            
+        
+
+        marker_8dcd56bfa4bb2d2be95a662120363467.bindPopup(popup_7a16c7e6c5d12bea9a4dfc5706d80411)
+        ;
+
+        
+    
+    
+            var marker_1780a2cfa5575213d5a07f2e053f835e = L.marker(
+                [21.0177778, -101.25666666666666],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_bfa282c624631b4271882c5ba829fbc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6a13861f175a84e446bbba21c6b2f7d = $(`<div id="html_a6a13861f175a84e446bbba21c6b2f7d" style="width: 100.0%; height: 100.0%;">Estado Guanajuato</div>`)[0];
+                popup_bfa282c624631b4271882c5ba829fbc2.setContent(html_a6a13861f175a84e446bbba21c6b2f7d);
+            
+        
+
+        marker_1780a2cfa5575213d5a07f2e053f835e.bindPopup(popup_bfa282c624631b4271882c5ba829fbc2)
+        ;
+
+        
+    
+    
+            var marker_2f9f338d07a642c55d684755368a8bd6 = L.marker(
+                [20.10451, -98.7889224],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_3e0086ca3d2cfcf33e286e0642631adc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43fc30e9a3f62c88495a31b5f34421e6 = $(`<div id="html_43fc30e9a3f62c88495a31b5f34421e6" style="width: 100.0%; height: 100.0%;">Estado Pachuca de Soto</div>`)[0];
+                popup_3e0086ca3d2cfcf33e286e0642631adc.setContent(html_43fc30e9a3f62c88495a31b5f34421e6);
+            
+        
+
+        marker_2f9f338d07a642c55d684755368a8bd6.bindPopup(popup_3e0086ca3d2cfcf33e286e0642631adc)
+        ;
+
+        
+    
+    
+            var marker_f5c51b7a7ce514cf02420b351d5bc58a = L.marker(
+                [19.6546004, -101.2623797],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_b7c5e137d7ddfc7c8d393fee5bb6e423 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3645548e16d6cd54d5238e7505428946 = $(`<div id="html_3645548e16d6cd54d5238e7505428946" style="width: 100.0%; height: 100.0%;">Estado Morelia</div>`)[0];
+                popup_b7c5e137d7ddfc7c8d393fee5bb6e423.setContent(html_3645548e16d6cd54d5238e7505428946);
+            
+        
+
+        marker_f5c51b7a7ce514cf02420b351d5bc58a.bindPopup(popup_b7c5e137d7ddfc7c8d393fee5bb6e423)
+        ;
+
+        
+    
+    
+            var marker_3e2ee32179e49b41df137c2c1a567dcc = L.marker(
+                [20.5954708, -100.397059],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_5e55a079df71c7b9d097158e263948da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24540fa6ff68f92d6223577b29d3212f = $(`<div id="html_24540fa6ff68f92d6223577b29d3212f" style="width: 100.0%; height: 100.0%;">Estado Santiago de Querétaro</div>`)[0];
+                popup_5e55a079df71c7b9d097158e263948da.setContent(html_24540fa6ff68f92d6223577b29d3212f);
+            
+        
+
+        marker_3e2ee32179e49b41df137c2c1a567dcc.bindPopup(popup_5e55a079df71c7b9d097158e263948da)
+        ;
+
+        
+    
+    
+            var marker_54e4ee06ae25429e2ef38a1dc0a0858c = L.marker(
+                [19.3167101, -98.2386138],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_9aedffe1dfbdeb39dcd1819afddfa9e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80973e6a38a1db54b51c877afb847305 = $(`<div id="html_80973e6a38a1db54b51c877afb847305" style="width: 100.0%; height: 100.0%;">Estado Tlaxcala de Xicohténcatl</div>`)[0];
+                popup_9aedffe1dfbdeb39dcd1819afddfa9e8.setContent(html_80973e6a38a1db54b51c877afb847305);
+            
+        
+
+        marker_54e4ee06ae25429e2ef38a1dc0a0858c.bindPopup(popup_9aedffe1dfbdeb39dcd1819afddfa9e8)
+        ;
+
+        
+    
+    
+            var marker_554013450447383635ec1dc4050301fe = L.marker(
+                [19.4326296, -99.1331785],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_7cf6b57504fc5c465d129aeb3798002a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdcc3638e2083b07e707f3f5ffd18c8b = $(`<div id="html_cdcc3638e2083b07e707f3f5ffd18c8b" style="width: 100.0%; height: 100.0%;">Estado CDMX</div>`)[0];
+                popup_7cf6b57504fc5c465d129aeb3798002a.setContent(html_cdcc3638e2083b07e707f3f5ffd18c8b);
+            
+        
+
+        marker_554013450447383635ec1dc4050301fe.bindPopup(popup_7cf6b57504fc5c465d129aeb3798002a)
+        ;
+
+        
+    
+    
+            var marker_6f08b217270bc29187630409814a6bdb = L.marker(
+                [17.3919748, -99.7428629],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_8b088492a115109b08939e82c6a750b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ae4fe21b8cc3f3b5628ce1c09e60c8f = $(`<div id="html_8ae4fe21b8cc3f3b5628ce1c09e60c8f" style="width: 100.0%; height: 100.0%;">Estado Chilpancingo de los Bravo</div>`)[0];
+                popup_8b088492a115109b08939e82c6a750b6.setContent(html_8ae4fe21b8cc3f3b5628ce1c09e60c8f);
+            
+        
+
+        marker_6f08b217270bc29187630409814a6bdb.bindPopup(popup_8b088492a115109b08939e82c6a750b6)
+        ;
+
+        
+    
+    
+            var marker_b4811c4d83b435bfa7fe8e857034f1f1 = L.marker(
+                [18.5081738, -88.297144],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_b96aeb36553428748a8f17433a8cfcff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ea75fecf58f5d909bfacf67bd61afd5 = $(`<div id="html_5ea75fecf58f5d909bfacf67bd61afd5" style="width: 100.0%; height: 100.0%;">Estado Chetumal</div>`)[0];
+                popup_b96aeb36553428748a8f17433a8cfcff.setContent(html_5ea75fecf58f5d909bfacf67bd61afd5);
+            
+        
+
+        marker_b4811c4d83b435bfa7fe8e857034f1f1.bindPopup(popup_b96aeb36553428748a8f17433a8cfcff)
+        ;
+
+        
+    
+    
+            var marker_82843a120da8192122e14d18131c29b6 = L.marker(
+                [20.967076, -89.62374],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_5852d8393b94951700a39e9706341b52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_376b217958e6abf0edc636c6d226c257 = $(`<div id="html_376b217958e6abf0edc636c6d226c257" style="width: 100.0%; height: 100.0%;">Estado Mérida</div>`)[0];
+                popup_5852d8393b94951700a39e9706341b52.setContent(html_376b217958e6abf0edc636c6d226c257);
+            
+        
+
+        marker_82843a120da8192122e14d18131c29b6.bindPopup(popup_5852d8393b94951700a39e9706341b52)
+        ;
+
+        
+    
+    
+            var marker_e06577538f48eac46bd81c4151ea343d = L.marker(
+                [19.8381215, -90.5198253],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_aa847e7646f5b860877474556735ef60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1ee229df0102ec35c9d14a85ac4224e = $(`<div id="html_d1ee229df0102ec35c9d14a85ac4224e" style="width: 100.0%; height: 100.0%;">Estado San Francisco de Campeche</div>`)[0];
+                popup_aa847e7646f5b860877474556735ef60.setContent(html_d1ee229df0102ec35c9d14a85ac4224e);
+            
+        
+
+        marker_e06577538f48eac46bd81c4151ea343d.bindPopup(popup_aa847e7646f5b860877474556735ef60)
+        ;
+
+        
+    
+    
+            var marker_46c4f910294665f27e7ad18014e8d388 = L.marker(
+                [16.753801, -93.115959],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_1affcacaaa43f9c51b70c5e3cc684f8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a9e07ce7caa381d52d2af80e46c06cc = $(`<div id="html_3a9e07ce7caa381d52d2af80e46c06cc" style="width: 100.0%; height: 100.0%;">Estado Tuxtla Gutiérrez</div>`)[0];
+                popup_1affcacaaa43f9c51b70c5e3cc684f8e.setContent(html_3a9e07ce7caa381d52d2af80e46c06cc);
+            
+        
+
+        marker_46c4f910294665f27e7ad18014e8d388.bindPopup(popup_1affcacaaa43f9c51b70c5e3cc684f8e)
+        ;
+
+        
+    
+    
+            var marker_9d9d32bfe17def26f5194bae2f1a9f85 = L.marker(
+                [17.9884657, -92.9366326],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_e5614ff985053b09fe035991da2ec7e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a62b6c6d0a5a72ae2005e2b5ec6a596 = $(`<div id="html_6a62b6c6d0a5a72ae2005e2b5ec6a596" style="width: 100.0%; height: 100.0%;">Estado Villahermosa</div>`)[0];
+                popup_e5614ff985053b09fe035991da2ec7e3.setContent(html_6a62b6c6d0a5a72ae2005e2b5ec6a596);
+            
+        
+
+        marker_9d9d32bfe17def26f5194bae2f1a9f85.bindPopup(popup_e5614ff985053b09fe035991da2ec7e3)
+        ;
+
+        
+    
+    
+            var marker_4c845cffed9031ab5165f545ebea9c35 = L.marker(
+                [19.5408338, -96.9146374],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_565956a9e65f7f136bc3d657e9cd83c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a81e4d62e221727654551c9d48c17af = $(`<div id="html_8a81e4d62e221727654551c9d48c17af" style="width: 100.0%; height: 100.0%;">Estado Xalapa-Enríquez</div>`)[0];
+                popup_565956a9e65f7f136bc3d657e9cd83c3.setContent(html_8a81e4d62e221727654551c9d48c17af);
+            
+        
+
+        marker_4c845cffed9031ab5165f545ebea9c35.bindPopup(popup_565956a9e65f7f136bc3d657e9cd83c3)
+        ;
+
+        
+    
+    
+            var marker_e4674059e77290fb2aff00a0786141fc = L.marker(
+                [17.0965868, -96.7207816],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_39f6e8679c9846739c4f6c3b63560b3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbb493a2ee4954bb5d863bc94e3f8d60 = $(`<div id="html_dbb493a2ee4954bb5d863bc94e3f8d60" style="width: 100.0%; height: 100.0%;">Estado Oaxaca de Juárez</div>`)[0];
+                popup_39f6e8679c9846739c4f6c3b63560b3a.setContent(html_dbb493a2ee4954bb5d863bc94e3f8d60);
+            
+        
+
+        marker_e4674059e77290fb2aff00a0786141fc.bindPopup(popup_39f6e8679c9846739c4f6c3b63560b3a)
+        ;
+
+        
+    
+    
+            var marker_75aeca51ad89ba6865f2794338c6db29 = L.marker(
+                [19.0437196, -98.1981486],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_7b1927071f46540f11e1c95457487d02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e5e161b28c25545201c8bec2b3dfe73 = $(`<div id="html_9e5e161b28c25545201c8bec2b3dfe73" style="width: 100.0%; height: 100.0%;">Estado Heroica Puebla de Zaragoza</div>`)[0];
+                popup_7b1927071f46540f11e1c95457487d02.setContent(html_9e5e161b28c25545201c8bec2b3dfe73);
+            
+        
+
+        marker_75aeca51ad89ba6865f2794338c6db29.bindPopup(popup_7b1927071f46540f11e1c95457487d02)
+        ;
+
+        
+    
+    
+            var marker_ed46ba33ac5a193287898b0d8266b028 = L.marker(
+                [19.292545, -99.6569007],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_3d5fc2c1e6a374d8fe7b3c06a52ddf6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27b32883d3e443f734e4425b86c2a1d7 = $(`<div id="html_27b32883d3e443f734e4425b86c2a1d7" style="width: 100.0%; height: 100.0%;">Estado Toluca de Lerdo</div>`)[0];
+                popup_3d5fc2c1e6a374d8fe7b3c06a52ddf6e.setContent(html_27b32883d3e443f734e4425b86c2a1d7);
+            
+        
+
+        marker_ed46ba33ac5a193287898b0d8266b028.bindPopup(popup_3d5fc2c1e6a374d8fe7b3c06a52ddf6e)
+        ;
+
+        
+    
+    
+            var marker_e27531d1832907f8a736e0add4a37ff9 = L.marker(
+                [24.022008, -104.654741],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_12dcfb95877790afd8d5c2fac5df4a79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e78781ac03b6687e5be521dcbe0015de = $(`<div id="html_e78781ac03b6687e5be521dcbe0015de" style="width: 100.0%; height: 100.0%;">Estado Victoria de Durango</div>`)[0];
+                popup_12dcfb95877790afd8d5c2fac5df4a79.setContent(html_e78781ac03b6687e5be521dcbe0015de);
+            
+        
+
+        marker_e27531d1832907f8a736e0add4a37ff9.bindPopup(popup_12dcfb95877790afd8d5c2fac5df4a79)
+        ;
+
+        
+    
+    
+            var marker_9de21952df9be5fcacbde8571fb1980e = L.marker(
+                [28.5000001, -106.0000001],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_83d856308ee7ee2fb69fab5b09eaf36c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1798824dc833dcdad65adf0f677ce99c = $(`<div id="html_1798824dc833dcdad65adf0f677ce99c" style="width: 100.0%; height: 100.0%;">Estado Chihuahua</div>`)[0];
+                popup_83d856308ee7ee2fb69fab5b09eaf36c.setContent(html_1798824dc833dcdad65adf0f677ce99c);
+            
+        
+
+        marker_9de21952df9be5fcacbde8571fb1980e.bindPopup(popup_83d856308ee7ee2fb69fab5b09eaf36c)
+        ;
+
+        
+    
+    
+            var marker_3dfea9af8e94ae752f0920b791347d2c = L.marker(
+                [32.6405247, -115.474899],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_44797db7de0dc850211552549e25259d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04e7ffbd2e77b0fe705319baa5ddcffb = $(`<div id="html_04e7ffbd2e77b0fe705319baa5ddcffb" style="width: 100.0%; height: 100.0%;">Estado Mexicali</div>`)[0];
+                popup_44797db7de0dc850211552549e25259d.setContent(html_04e7ffbd2e77b0fe705319baa5ddcffb);
+            
+        
+
+        marker_3dfea9af8e94ae752f0920b791347d2c.bindPopup(popup_44797db7de0dc850211552549e25259d)
+        ;
+
+        
+    
+    
+            var marker_f895f4f93c719d33a49a78a950d80d0a = L.marker(
+                [24.1619948, -110.3158532],
+                {}
+            ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+    
+        var popup_f5147f0ff43df800b9459a1a35e81eee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c60c805426bc8bc2df43516cde9f2ce = $(`<div id="html_5c60c805426bc8bc2df43516cde9f2ce" style="width: 100.0%; height: 100.0%;">Estado La Paz</div>`)[0];
+                popup_f5147f0ff43df800b9459a1a35e81eee.setContent(html_5c60c805426bc8bc2df43516cde9f2ce);
+            
+        
+
+        marker_f895f4f93c719d33a49a78a950d80d0a.bindPopup(popup_f5147f0ff43df800b9459a1a35e81eee)
+        ;
+
+        
+    
+    
+            ant_path_5682e3f9447a1f38100b907fedee7c98 = L.polyline.antPath(
+              [[22.7716667, -102.57527777777776], [18.9331321, -99.2599579], [25.4230425, -100.9927509], [25.6802019, -100.315258], [23.7389846, -99.1441352], [22.5000001, -100.4949145], [21.880487, -102.2967195], [20.6720375, -103.338396], [24.7978965, -107.393395], [29.0948207, -110.9692202], [21.5119156, -104.8915889], [19.2430556, -103.72805555555556], [21.0177778, -101.25666666666666], [20.10451, -98.7889224], [19.6546004, -101.2623797], [20.5954708, -100.397059], [19.3167101, -98.2386138], [19.4326296, -99.1331785], [17.3919748, -99.7428629], [18.5081738, -88.297144], [20.967076, -89.62374], [19.8381215, -90.5198253], [16.753801, -93.115959], [17.9884657, -92.9366326], [19.5408338, -96.9146374], [17.0965868, -96.7207816], [19.0437196, -98.1981486], [19.292545, -99.6569007], [24.022008, -104.654741], [28.5000001, -106.0000001], [32.6405247, -115.474899], [24.1619948, -110.3158532], [22.7716667, -102.57527777777776]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+        ).addTo(map_12d6d624362ee24fe3008ece6b4b13a6);
+        
+</script>
+</html>
