@@ -2,10 +2,10 @@
 
 This is the repository where you can view the codes and some attached files for Task 1 on heuristic optimization.
 
-#### This work was done by:
+## Team Members
 - Carolina Álvarez Murillo: [caroAM22](https://github.com/caroAM22)
 - Alejandro Orozco Ochoa: [brokie636](https://github.com/brokie636)
-- Juan José Zapata Cadavid: 
+- Juan José Zapata Cadavid: [jzapataca](https://github.com/jzapataca)
 
 ## Execution Instructions
 
